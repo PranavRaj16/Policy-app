@@ -1,0 +1,45 @@
+# README - Insurance App
+
+## 🚀 Project Setup
+
+### 1️⃣ Install Dependencies
+```sh
+npm install
+```
+
+### 2️⃣ Run the Application
+```sh
+npm start
+```
+
+### 3️⃣ Available Commands
+| Command | Description |
+|---------|-------------|
+| `npm start` | Deletes any existing PM2 process and starts the app using PM2 |
+| `npm run stop` | Stops and deletes the PM2 process |
+| `npm run restart` | Restarts the PM2 process |
+| `npm run logs` | Shows real-time logs for the application |
+| `npm run list` | Lists all running PM2 processes |
+| `npm run nodemon` | Starts the app in development mode with Nodemon |
+
+### 4️⃣ Ensure to stop server when not using cause ir runs in background
+```sh
+npm run stop
+```
+
+#### 📍 Track CPU Usage & Restart if >70%
+- **Process:** Uses a Node Scheduler to monitor CPU and restart the server if usage exceeds 70%.
+
+
+---
+
+## 📌 API Documentation
+
+For full API details, check [`api-docs.md`](api-docs.md)
+
+## 📌 Deployment Notes
+- Ensure MongoDB is running (`mongodb://localhost:27017/insuranceDB`).
+- PM2 must be installed globally (`npm install -g pm2`).
+
+---
+
